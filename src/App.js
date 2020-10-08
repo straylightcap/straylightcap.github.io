@@ -8,9 +8,11 @@ function App() {
       {/* <p>
         straylight::capital &#123;&#125; ;
       </p> */}
+      <div className="typewriter">
       <p>
         straylight.capital_
       </p>
+      </div>
         <a
           className="contact"
           href="mailto:info@straylight.capital"

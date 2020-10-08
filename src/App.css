@@ -38,7 +38,34 @@
   text-rendering: optimizeLegibility;
 }
 
+.typewriter p {
+  overflow: hidden;
+  border-right: .40em solid white;
+  white-space: nowrap;
+  margin: 0 auto;
+  animation:
+    typing 1.5s steps(20, end) 0.5s 1 normal both,
+    blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+  from {width: 0}
+  to { width: 100%}
+}
+
+@keyframes blink-caret {
+  from, to { border-color: transparent }
+  50% { border-color: white; }
+}
+
 .contact {
   color: rgba(255,255,255);
   font-size: calc(10px + 0.5vmin);
+  opacity: 0;
+  animation: showContact 1.5s ease-in 2s forwards;
+  animation-fill-mode: forwards;
+}
+
+@keyframes showContact {
+  to { opacity: 1;}
 }
