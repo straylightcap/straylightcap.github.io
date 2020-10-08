@@ -15,7 +15,7 @@
 
 .bg {
   height: 40vmin;
-  pointer-events: none;
+  /* pointer-events: none; */
 }
 
 
@@ -36,10 +36,6 @@
   -webkit-font-feature-settings: "liga" on, "calt" on;
   -webkit-font-smoothing: antialiased;
   text-rendering: optimizeLegibility;
-}
-
-.test {
-  font-size: calc(10px + 20vmin);
 }
 
 .contact {
